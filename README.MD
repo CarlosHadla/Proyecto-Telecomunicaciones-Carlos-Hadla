@@ -20,7 +20,7 @@ Aca va el kpi original y el propuesto:
 
 #### [**ETL**](https://github.com/CarlosHadla/Proyecto-Telecomunicaciones-Carlos-Hadla#etl)
 
-En el notebook [ETL](https://github.com/CarlosHadla/Proyecto-Telecomunicaciones-Carlos-Hadla/ETLySeleccionDeDatos.ipynb), se observa la importación de los dataset y se empieza a hacer una limpieza.
+En el notebook [ETL](https://github.com/CarlosHadla/Proyecto-Telecomunicaciones-Carlos-Hadla/blob/main/ETLySeleccionDeDatos.ipynb), se observa la importación de los dataset y se empieza a hacer una limpieza.
 
 **1. Objetivos:**
 
