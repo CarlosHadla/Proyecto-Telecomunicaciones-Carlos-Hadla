@@ -27,7 +27,25 @@ En el notebook [ETL](https://github.com/CarlosHadla/Proyecto-Telecomunicaciones
 - Se seleccionaron los datos de 'Nación' y 'Provincia' para realizar el EDA, ya que los dataframes categorizados como 'Localidad' no tienen datos de tiempo.
 - Se retiro el dataframe 'prov_dis_accesos_todo_vel_bajada', ya que 'prov_dis_accesos_rango_vel_bajada' contiene los mismos datos agrupados en rangos y abarca todos los años visualizados(2014-2022).
 
+### Resumen del ETL
+
+#### Nacional
+- Los datos a nivel nacional cuentan con 36 observaciones y no tienen valores faltantes observables.
+- Los datos están agrupados en 4 trimestres por año, abarcando desde 2014 hasta 2018.
+
+#### Provincial
+- Los datos a nivel provincial cuentan con 864 observaciones, excepto `prov_dis_accesos_todo_vel_bajada`, que cuenta con 504 observaciones.
+- Los datos están agrupados en 4 trimestres por año, abarcando desde 2014 hasta 2018.
+
+#### Localidad
+- No se utilizarán los datos que contienen localidades, ya que no tienen fechas, horas o trimestres que sirvan como referencia.
+- Se observa que todas las tablas tienen diferencias en la cantidad de datos, lo que indica discrepancias en las tablas de localidades.
+
+
 ## Datos del EDA
+
+  En el notebook [EDA](https://github.com/CarlosHadla/Proyecto-Telecomunicaciones-Carlos-Hadla/blob/main/EDA.ipynb), se observa el análisis exploratorio de las variables del dataset, a modo de obtener insights.
+
 ### Carga de los Datos
 #### Nacional
 - `na_accesos_cada_100_hogares_fijo`
@@ -44,19 +62,6 @@ En el notebook [ETL](https://github.com/CarlosHadla/Proyecto-Telecomunicaciones
 - `prov_accesos_b_ancha_angosta_fijo`
 - `prov_dis_accesos_rango_vel_bajada`
 - `prov_dis_accesos_todo_vel_bajada`
-
-### Resumen del EDA
-#### Nacional
-- Los datos a nivel nacional cuentan con 36 observaciones y no tienen valores faltantes observables.
-- Los datos están agrupados en 4 trimestres por año, abarcando desde 2014 hasta 2018.
-
-#### Provincial
-- Los datos a nivel provincial cuentan con 864 observaciones, excepto `prov_dis_accesos_todo_vel_bajada`, que cuenta con 504 observaciones.
-- Los datos están agrupados en 4 trimestres por año, abarcando desde 2014 hasta 2018.
-
-#### Localidad
-- No se utilizarán los datos que contienen localidades, ya que no tienen fechas, horas o trimestres que sirvan como referencia.
-- Se observa que todas las tablas tienen diferencias en la cantidad de datos, lo que indica discrepancias en las tablas de localidades.
 
 ## Comenzando el Análisis
 El análisis de los datos comienza con la exploración de estadísticas descriptivas de los principales conjuntos de datos. A continuación, se presentan algunos de los hallazgos clave basados en los análisis realizados.
